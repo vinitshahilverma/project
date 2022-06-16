@@ -13,74 +13,212 @@
             box-sizing:border-box;
             font-family: 'Roboto', sans-serif;
         }
-        #grandfather{
-            display: flex;
-        }
-        #grandfather>img{
-            width:20%;
-            margin-left: 150px;
-            margin-right: 20px;
+
+        /* ------navbar------ */
+        #navigation{
+            display:flex;
+            width:100%;
+            height:64px;
+            background-color: white;
+            padding: 0px 24px 0 24px;
+            box-shadow: rgba(100, 100, 111,0.2) 0px 7px 29px 0px;
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top:0px;
+            z-index: 2;
+            
         }
         #father{
-            border:1px solid;
-            width:60%
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1471.2px;
+            height:48px;
+    
         }
-        #father>div{
+        #father>div:first-child>img{
+                  width:41.03%;
+        }
+        #father>div:first-child{
+                display: grid;
+                align-items: center;
+                margin-left: 50px;
+        }
+        #father>div:last-child{
+                display: flex;
+                align-items: center;
+        }
+        #father>div:last-child>img{
+            width:24px;
+            height:24px;
+            margin-right:28px;
+        }
+        button{
+            width:84.05px;
+            height:36.5px;
+            background-color: #DF1E2E;
+           color: white;
+           /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+           font-weight:550;
+           font-size: 14px;
+           border-radius: 5px;
+           border: none;
+        }  
+        /* <-----------------------------------------------------------------------------------> */
+        #grandfather{
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #grandfather>img{
+            width:295.66px;
+            height:295.66px;
+            margin-left: 150px;
+            margin-right: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+        }
+        #father1{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width:60%;
+            height:auto;
+        }
+        #father1>div{
             padding-top: 30px;
-            padding-left: 20px;
+            padding-left:20px;
         }
         h2{
             font-weight: 100;
+            margin-left: 10px;
         }
-        #job{
+        .job{
             display: flex;
+            width:95%;
+            margin: auto;
             font-size: 14px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed grey;
+           
         }
-        #job>div>img{
-            width:50%; 
+        .job>div>img{
+            width:45%; 
+            display: block;
+           
         }
-        #job>div:first-child{
-               margin-left: 10px;
+        .job>div:first-child{
+            
+            width:25%;
+               /* margin-left: 10px; */
         }
-        #job>div:nth-child(2){
-            margin-left: -70px;
+        .job>div:nth-child(2){
+            /* position: sticky; */
+            margin-left: -80px;
         }
-        #job>div:last-child{
-            margin-left: 330px;
+        .job>div:last-child{
+           position: absolute;
+           right:170px;
             text-align: right;
         }
-        #job>div:last-child>div:first-child{
+        .job>div:last-child>div:first-child{
             margin-bottom: 37px;
         }
-        #job>div:last-child>div:nth-child(2){
-            margin-bottom: 37px;
+        .job>div:last-child>div:nth-child(2){
+            margin-bottom: 33px;
         }
-        #job>div:nth-child(2)>div{
-            
+        .job>div:nth-child(2)>div{
             margin-bottom: 5px;
+        }
+        .job h2{
+           margin-left: 0px;
         }
         i{
             color: black;
         }
-        #job>div:last-child>div:last-child>a{
+        .job>div:last-child>div:last-child>a{
           text-decoration: none;
         }
+        .job>div:nth-child(2)>div:nth-child(3){
+            color:grey;
+        }
+        .job>div:nth-child(2)>div:nth-child(4){
+            color:grey;
+        }
+        .job>div:nth-child(3)>div:nth-child(3)>a{
+            color:#087CDD;
+        }
+        #seemore>button{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 20px;
+            width:100px;
+            color: blue;
+            background-color: transparent;
+            border:none;
+            font-size: 14px;
+            font-weight:500;
+            cursor: pointer;
+        }
+        #seemore>button>i{
+            margin-left: 5px;
+            color: blue;
+        }
+       #view{
+        display:grid;
+        gap:30px;
+       }
+       @media all and (min-width:866px) and (max-width:1024px) {
+        #grandfather>img{
+            margin-left:10px;
+            width:200px;
+            height:200px
+        }
+        .job>div:nth-child(2){
+            /* position: sticky; */
+            margin-left: -50px;
+        }
+       }
+       @media all and (min-width:400px) and (max-width:865px) {
+        #grandfather>img{
+            display:none;
+        }
+        #father1{
+            width:95%;
+            margin-left: 20px;
+        }
+       }
     </style>
 </head>
 <body>
+     <!-- ......navbar...... -->
+     <div id="navigation">
+        <div id="father">
+         <div>
+            <img src="https://assets.interntheory.com/creative/logo.png" alt="logo">
+         </div>
+         <div>
+            <img src="https://t2.gstatic.com/images?q=tbn:ANd9GcTjrHlkYmgAQKRZr3tHn13CYNox3hay2bcb4dUP22cVVDfNaoXJ" alt="cart">
+            <button>SIGN IN</button>
+            </div>
+         </div>
+        </div>
+    </div>
+    <!-- <-----------------------------------------------------------------------> 
     <div id="grandfather">
     <img src="https://assets.interntheory.com/creative/Internship_left_course_add_01.png" alt="error">
-    <div id="father">
+    <div id="father1">
         <div><h2>Fresher Job Jobs</h2></div>
-        <div id="job">
+        <div class="job">
              <div><img src="https://assets.interntheory.com/creative/logo.png" alt="logo"></div>
              <div>
                 <div><h2>Develop Your Skillset</h2></div>
                 <div>Online Skill Development Programs</div>
-                <div class="low">Taught by Industry Experts Internship</div>
-                <div class="low">Certified Courses</div>
-                <div class="low">Guaranteed Internship Opportunities</div>
-                <div class="high">Learn Industry-Demanded Skills</div>
+                <div>Taught by Industry Experts Internship</div>
+                <div>Certified Courses</div>
+                <div style="color:grey">Guaranteed Internship Opportunities</div>
+                <div>Learn Industry-Demanded Skills</div>
              </div>
              <div>
                 <div>4-6 Weeks</div>
@@ -88,7 +226,293 @@
                 <div><a href="#">UPGRADE SKILLS</a></div>
              </div>
         </div>
+        
+        <div class="job">
+            <div ><img src="https://assets.interntheory.com/uploads/company/logos/1b516583445affa5f1659f66a1bb5066ba0409ba.jpg" alt="logo"></div>
+            <div>
+               <div><h2>Admin Executive</h2></div>
+               <div>WorkWise Solutions Pvt Ltd</div>
+               <div>Admin</div>
+               <div>Mumbai</div>
+               <div>Salary: 21000 per month</div>
+            </div>
+            <div>
+               <div>3 weeks left</div>
+               <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+               <div><a href="#">VIEW AND APPLY</a></div>
+            </div>
+       </div>
+       <div class="job">
+        <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+        <div>
+           <div><h2>Hybrid Mobile App Development</h2></div>
+           <div>arham labs</div>
+           <div>App Design And Development</div>
+           <div>Mumbai</div>
+           <div>Salary: 50000 - 70000 per month</div>
+        </div>
+        <div>
+           <div>2 weeks left</div>
+           <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+           <div><a href="#">VIEW AND APPLY</a></div>
+        </div>
+   </div>
+   <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Strategy Associate</h2></div>
+       <div>HomeCapital</div>
+       <div>Business Strategy</div>
+       <div>Mumbai</div>
+       <div>Salary: 60000 - 80000 per month</div>
+    </div>
+    <div>
+       <div>2 weeks left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/companylogos/eef24376f8ef94fcc6f44e84b4275f006f9f05d4/c1de81e99cb1e58751a9f2db58529a775aba3f5ccom.png" alt="logo"></div>
+    <div>
+       <div><h2>Admin Executive</h2></div>
+       <div>istituto marangoni</div>
+       <div>Admin</div>
+       <div>Mumbai</div>
+       <div>Salary: 40000 - 50000 per month</div>
+    </div>
+    <div>
+       <div>2 weeks left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/companylogos/eef24376f8ef94fcc6f44e84b4275f006f9f05d4/c1de81e99cb1e58751a9f2db58529a775aba3f5ccom.png" alt="logo"></div>
+    <div>
+       <div><h2>Customer Relationship Executive</h2></div>
+       <div>istituto marangoni</div>
+       <div>Business Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 25000 - 30000 per month</div>
+    </div>
+    <div>
+       <div>2 weeks left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Technical Writer</h2></div>
+       <div>HomeCapital</div>
+       <div>Content Writing</div>
+       <div>Mumbai</div>
+       <div>Salary: 50000 - 60000 per month</div>
+    </div>
+    <div>
+       <div>1 week</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Full Stack Developer</h2></div>
+       <div>HomeCapital</div>
+       <div>Software Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 65000 - 100000 per month</div>
+    </div>
+    <div>
+       <div>1 week</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Java Developer</h2></div>
+       <div>arham labs</div>
+       <div>Software Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 50000 - 70000 per month</div>
+    </div>
+    <div>
+       <div>1 week</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/bf3174743fe71c1e3028caabc90044f486d5bc7b.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Front End Developer</h2></div>
+       <div>HomeCapital</div>
+       <div>Software Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 50000 - 60000 per month</div>
+    </div>
+    <div>
+       <div>1 week</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Business Analyst</h2></div>
+       <div>arham labs</div>
+       <div>Project Management</div>
+       <div>Mumbai</div>
+       <div>Salary: 50000 - 60000 per month</div>
+    </div>
+    <div>
+       <div>4 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div id="view">
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Project Manager</h2></div>
+       <div>arham labs</div>
+       <div>Project Management</div>
+       <div>Mumbai</div>
+       <div>Salary: 60000 - 80000 per month</div>
+    </div>
+    <div>
+       <div>4 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Engineer (ERPNext)</h2></div>
+       <div>arham labs</div>
+       <div>Software Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 35000 - 45000 per month</div>
+    </div>
+    <div>
+       <div>4 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Laravel Developer</h2></div>
+       <div>arham labs</div>
+       <div>Web Design And Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 30000 - 50000 per month</div>
+    </div>
+    <div>
+       <div>4 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Python Developer</h2></div>
+       <div>arham labs</div>
+       <div>Software Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 50000 - 60000 per month</div>
+    </div>
+    <div>
+       <div>4 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Content Writer</h2></div>
+       <div>arham labs</div>
+       <div>Content Writing</div>
+       <div>Mumbai</div>
+       <div>Salary: 30000 - 50000 per month</div>
+    </div>
+    <div>
+       <div>4 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>UI/ UX Designer</h2></div>
+       <div>arham labs</div>
+       <div>Web Design And Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 40000 - 60000 per month</div>
+    </div>
+    <div>
+       <div>4 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>React Native Application Developer</h2></div>
+       <div>arham labs</div>
+       <div>App Design And Development</div>
+       <div>Mumbai</div>
+       <div>Salary: 50000 - 80000 per month</div>
+    </div>
+    <div>
+       <div>4 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+  <div class="job">
+    <div ><img src="https://assets.interntheory.com/uploads/company/logos/5e4aa4f62ecc23200708c5cf0d542f7ee1345362.jpg" alt="logo"></div>
+    <div>
+       <div><h2>Accounts Executive</h2></div>
+       <div>arham labs</div>
+       <div>Finance</div>
+       <div>Mumbai</div>
+       <div>Salary: 8000 - 10000 per month</div>
+    </div>
+    <div>
+       <div>2 days left</div>
+       <div><a href="#"><i class="fa-solid fa-share-nodes"></i></a></div>
+       <div><a href="#">VIEW AND APPLY</a></div>
+    </div>
+  </div>
+</div>
+  <div id="seemore">
+    <button>SEE MORE<i class="fa-solid fa-angle-down"></i></button>
+  </div>
     </div>
    </div>
 </body>
 </html>
+
+<script>
+    document.querySelector("#view").style.display="none";
+    document.querySelector("#seemore>button").addEventListener("click",seemore);
+
+    function seemore(){
+        document.querySelector("#view").style.display="grid";
+    }
+</script>
